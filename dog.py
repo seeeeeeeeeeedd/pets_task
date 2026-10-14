@@ -8,7 +8,7 @@ class Dog(Pet):
         is_valid = self.__is_valid_breed(breed)
 
         if is_valid:
-            self.__breed = breed
+            self.__breed = breed.lower()
         else:
             self.__breed = 'У вас дворняжка'
 

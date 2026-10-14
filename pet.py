@@ -3,11 +3,11 @@ class Pet:
         self.__min_age = 0
         self.__max_age = 55
 
-        is_valid_name = self.__is_valid_text(name)
+        is_valid_name = self.__is_valid_name(name)
         is_valid_age = self.__is_valid_age(age)
 
         if is_valid_name and is_valid_age:
-            self.__name = name
+            self.__name = name.title()
             self.__age = age
             self.__weight = weight
         else:
