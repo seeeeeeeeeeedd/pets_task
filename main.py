@@ -66,7 +66,7 @@ def show_all_pets():
         print('Список питомцев пуст')
     else:
         for pet in pets:
-            print(f'{pet.get_name()} говорит: {pet.make_sound()}')
+            print(pet.print_info())
 
 
 is_program_running = True

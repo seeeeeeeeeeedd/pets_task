@@ -12,6 +12,11 @@ class Cat(Pet):
         else:
             self.__breed = 'Неизвестная порода'
 
+    def print_info(self) -> str:
+        basic_info = super().print_info()
+
+        return f'{basic_info}. Порода: {self.get_breed()}'
+
     def make_sound(self) -> str:
         return 'мяу-мяу'
 

@@ -12,6 +12,11 @@ class Dog(Pet):
         else:
             self.__breed = 'У вас дворняжка'
 
+    def print_info(self) -> str:
+        basic_info = super().print_info()
+
+        return f'{basic_info}. Порода: {self.get_breed()}'
+
     def make_sound(self) -> str:
         return 'гав-гав'
 

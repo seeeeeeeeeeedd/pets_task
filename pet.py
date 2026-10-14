@@ -15,6 +15,10 @@ class Pet:
             self.__age = 0
             self.__weight = 0
 
+    def print_info(self) -> str:
+        return (f'{self.get_name()}, {self.get_age()} лет, {self.get_weight()} кг. '
+                f'Говорит: {self.make_sound()}')
+
     def make_sound(self) -> str:
         return 'молчит'
 
